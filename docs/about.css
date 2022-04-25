@@ -1,0 +1,686 @@
+/*폰트*/
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@font-face {
+     font-family: 'DungGeunMo';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+
+
+
+
+html>body{
+  font-family: 'Press Start 2P', cursive;
+   cursor:url(https://ifh.cc/g/nOsMnd.png),auto;
+ 
+}
+body{
+  background-color:black;
+  height:4550px;
+}
+@media (min-width: 1800px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #16F05E;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #16F05E;
+  
+}
+
+::-webkit-scrollbar-thumb {
+  background-color:white;
+  border-radius:60px;
+  
+}
+.con{
+  width:1920px;
+  padding:0 170px;
+}
+/*메뉴바*/
+.strongglow {
+  text-shadow:
+  0 0 30px #ffffff,0 0 10px #ffffff;
+}
+.menu-box-16{
+  margin-top:50px;
+  z-index:999;
+ 
+}
+.text-menu-20{
+  color:white;
+  font-size:35px;
+}
+.fa-solid{
+  color:white;
+  font-size:28px;
+}
+.top-menu-box {
+  position:fixed;
+  top:20px;
+  right:160px;
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  transition:all .5s;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.top-menu-box__btn-toggle {
+  position:relative;
+  top:-15px;
+  left:1550px;
+  width:40px;
+  height:40px;
+  border-radius:50%;
+ cursor: url(https://cdn.jsdelivr.net/gh/rmsgkr5623/project-gh/docs/portpolio_ch/img/cursor_1.png) 14 0,pointer;
+}
+
+html.top-menu-box-actived .top-menu-box {
+  top:-50%;
+  right:-50%;
+  width:200%;
+  height:200%;
+  background-color:#16F05E;
+}
+
+html.top-menu-box-actived .top-menu-box__btn-toggle {
+ background-image:url(https://ifh.cc/g/c9sXpW.png);
+  background-position:top center;
+  background-repeat:no-repeat;
+  width:90px;
+  height:90px;
+}
+
+.top-menu-box__box {
+  width:100vh;
+  height:100vh;
+  visibility:hidden;
+  opacity:0;
+  transition: all .499s 0.001s;
+}
+
+html.top-menu-box-actived .top-menu-box__box {
+  visibility:visible;
+  opacity:1;
+}
+
+html.top-menu-box-actived,
+html.top-menu-box-actived > body {
+  overflow:hidden;
+}
+.ge-10{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+ 
+}
+.ge-10 ul{
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  gap:30px;
+}
+.ge-10 ul>li{
+  position:relative;
+}
+.ge-10 ul>li{
+  position:relative;
+  font-size:3em;
+  line-height:1em;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color:transparent;
+  -webkit-text-stroke:1px #FFFFFF;
+}
+.ge-10 ul>li>a::before{
+  content:attr(data-text);
+  position:absolute;
+  color:var(--clr);
+  width:0;
+  overflow:hidden;
+  transition:1s;
+  border-right: 8px solid var(--clr);
+  -webkit-text-stroke:1px var(--clr);
+}
+.ge-10 ul>li>a:hover::before{
+  width:100%;
+  filter:drop-shadow(0 0 25px var(--clr));
+}
+.ge-10 ul>li>a{
+  position:relative;
+  
+}
+/*어바웃 메인이미지*/
+.about-1{
+  margin-bottom:150px;
+}
+.about-1>img{
+  width:1920px;
+  
+}
+.about{
+  margin-top:-175px;
+  z-index:1;
+}
+
+.bla{
+  background-color:black;
+  position:absolute;
+  height:300px;
+  width:1920px;
+}
+.bla-1{
+  background-color:black;
+  position:absolute;
+  top:770px;
+  height:305px;
+  width:1920px;
+  z-index:991;
+}
+.de-star{
+  color:white;
+  position:absolute;
+  font-size:80px;
+  font-family: 'DungGeunMo';
+  top:650px;
+  left:170px;
+  z-index:999;
+}
+
+.hover-en {
+  
+  font-weight:bold;
+  animation-name:ani-11;
+  animation-duration:4s;
+  animation-timing-function:linear;
+  animation-iteration-count:infinite;
+  animation-play-state:paused;
+  
+  
+}
+
+.hover-en {
+  animation-play-state:running;
+  padding-right:10px;
+  
+}
+
+
+.hover-en > span:nth-child(1) {
+  color:var(--color-1);
+  text-shadow:var(--color-2);
+  color:var(--color-3);
+  text-shadow:var(--color-4);
+}
+
+
+.hover-en>span{
+  transition:color .4s,text-shadow .4s;
+}
+
+@keyframes ani-11 {
+   0% { 
+    --color-1:white;
+    text-shadow:0 0 30px #ffffff,0 0 10px #ffffff;
+
+  }
+  100% { 
+    --color-3:#16F05E;
+    --color-4:0 0 30px #16F05E,0 0 10px #16F05E;
+    
+  }
+}
+.about-text-2{
+  margin-top:90px;
+}
+
+
+.about-text-2-1{
+  font-size:70px;
+  position:relative;
+  color:white;
+  line-height:107.5%;
+  z-index:20;
+  word-spacing:-30px;
+}
+.about-text-2-1>span{
+  color:#16F05E;
+}
+.about-text-3{
+  font-size:35px;
+  color:#16F05E;
+  margin-top:20px;
+  word-spacing:-2px;
+  font-family: 'DungGeunMo';
+}
+.about-text-4{
+  font-size:20px;
+  color:white;
+  margin-top:150px;
+  font-family: 'DungGeunMo';
+  -webkit-text-stroke:white;
+  line-height:21px;
+}
+.about-text-5{
+  font-size:20px;
+  color:white;
+  margin-top:120px;
+  -webkit-text-stroke:white;
+}
+.about-img-10{
+  top:-100px;
+  left:974px;
+  z-index:1;
+}
+/*3번째 캐릭터 슬라이드*/
+.chr{
+  font-size:40px;
+  color:#16F05E;
+  margin-top:250px;
+  text-align:center;
+  word-spacing:-5px;
+}
+.chr-2{
+  font-size:35px;
+  color:white;
+  line-height:40px;
+  text-align:center;
+  font-family: 'DungGeunMo';
+  word-spacing:-5px;
+}
+
+.swiper-box-1 {
+  width: 1200px;
+  margin:0 auto;
+  position:relative;
+  --swiper-theme-color: #ff00ff;
+  --swiper-navigation-size: 44px;
+}
+
+.swiper-box-1 .swiper {
+  height: 800px;
+}
+.swiper-box-1 > .swiper{
+  padding:20px 0px 200px 0px;
+}
+
+.swiper-box-1 .swiper .swiper-slide {
+  transition:font-size 1s;
+}
+.swiper-box-1 .swiper .swiper-slide .cc{
+  font-size:22px;
+  z-index:100;
+  color:#16F05E;
+  font-family: 'DungGeunMo';
+  margin-top:-50px;
+  word-spacing:-1px;
+  -webkit-text-stroke:1px #16F05E;
+}
+.swiper-box-1 .swiper .swiper-slide img{
+  transform:scale(0.7);
+}
+
+.swiper-box-1 .swiper .swiper-slide.swiper-slide-active {
+  transform:scale(1.4);
+  transition:transform .8s;
+}
+
+.swiper-box-1 .swiper-button-prev,
+.swiper-box-1 .swiper-rtl .swiper-button-next {
+  left:-50px;
+  cursor: url(https://cdn.jsdelivr.net/gh/rmsgkr5623/project-gh/docs/portpolio_ch/img/cursor_1.png) 14 0,pointer;
+}
+
+.swiper-box-1 .swiper-button-next,
+.swiper-box-1 .swiper-rtl .swiper-button-prev {
+  right:-50px;
+  cursor: url(https://cdn.jsdelivr.net/gh/rmsgkr5623/project-gh/docs/portpolio_ch/img/cursor_1.png) 14 0,pointer;
+}
+
+.swiper-box-1 .swiper-horizontal>.swiper-pagination-bullets,
+.swiper-box-1 .swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-box-1 .swiper-pagination-custom,
+.swiper-box-1 .swiper-pagination-fraction {
+  bottom:-50px;
+}
+.swiper-button-next {
+  background: url(https://cdn.jsdelivr.net/gh/rmsgkr5623/project-gh/docs/portpolio_ch/img/ab_img_7.png
+) no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+}
+
+.swiper-button-prev {
+  background: url(https://cdn.jsdelivr.net/gh/rmsgkr5623/project-gh/docs/portpolio_ch/img/ab_img_6.png
+) no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
+.swiper-box-1 .swiper-button-next{
+  top:35%
+}
+.swiper-box-1 .swiper-button-prev{
+  top:35%
+}
+
+.swiper-box-1 .cc{
+  font-family: 'dalmoori';
+  text-align:center;
+}
+.swiper-box-1{
+  margin-top:100px;
+}
+.strongglow-1 {
+  text-shadow:
+  0 0 10px #16F05E;
+}
+.strongglow-2 {
+  box-shadow:
+  0 0 10px #16F05E;
+}
+.look-text{
+  color:#16F05E;
+  font-size:50px;
+}
+.look-text-1{
+  margin-top:-22px;
+}
+.look-box{
+  margin-top:100px;
+}
+.box-1 {
+  --box-1__height:200px;
+  width:900px;
+  height:var(--box-1__height);
+  color:white;
+  overflow:hidden;
+  font-size:70px;
+  font-family: 'DungGeunMo';
+}
+
+.box-1 > div {
+  height:100%;
+}
+
+.box-1 > div:nth-child(1) {
+  animation-name:ani-1;
+  animation-duration: 11s;
+  animation-fill-mode:both;
+  animation-iteration-count:infinite;
+}
+
+.box-1:hover > div:nth-child(1) {
+  animation-play-state:paused;
+}
+
+@keyframes ani-1 {
+  0% {
+    margin-top:0;
+  }
+  
+  20% {
+    margin-top:0;
+  }
+  
+  25% {
+    margin-top:calc(var(--box-1__height) * -1);
+  }
+  
+  45% {
+    margin-top:calc(var(--box-1__height) * -1);
+  }
+  
+  50% {
+    margin-top:calc(var(--box-1__height) * -2);
+  }
+  
+  70% {
+    margin-top:calc(var(--box-1__height) * -2);
+  }
+  
+  75% {
+    margin-top:calc(var(--box-1__height) * -3);
+  }
+  
+  95% {
+    margin-top:calc(var(--box-1__height) * -3);
+  }
+  
+  100% {
+    margin-top:0;
+  }
+}
+.gg{
+  color:#FFD900;
+  line-height:10px;
+}
+.gg-1{
+  color:#16F05E;
+  line-height:10px;
+}
+.gg-2{
+  color:#2340DB;
+}
+.gg-3{
+  color:#FB5C5C;
+}
+.look-img>img{
+  height:795px;
+}
+.look-sk{
+  color:white;
+  font-size:30px;
+  margin-top:40px;
+  
+}
+.hh{
+  width:620px;
+  height:25px;
+  background-color:#16F05E;
+  margin-top:18px;
+  margin-left:50px;
+}
+.hh-1{
+  width:551px;
+  height:25px;
+  background-color:#16F05E;
+  margin-top:18px;
+  margin-left:50px;
+}
+
+.sk-10{
+  color:white;
+  font-size:20px;
+  margin-left:40px;
+  margin-top:16.5px;
+}
+.sk-11{
+  color:white;
+  font-size:20px;
+  margin-left:110px;
+  margin-top:16.5px;
+}
+.look-sk-10{
+  font-size:18px;
+  margin-top:15px;
+  margin-left:6px;
+}
+.sk-20{
+  margin-bottom:70px;
+  font-size:30px;
+}
+.sk-25{
+  color:white;
+  font-size:20px;
+  margin-top:150px;
+}
+.sk-30{
+  font-size:17px;
+  color:white;
+  font-family: 'DungGeunMo';
+  margin-top:10px;
+}
+.sk-ma{
+  margin-bottom:25px;
+}
+/*다음단계 버튼*/
+.hover-ani:hover>span:first-child{
+  font-size:4.2rem;
+  margin-top:-10px;
+  transition:font-size .8s,margin-top .7s;
+}
+
+.hover-ani{
+  cursor:pointer;
+  
+}
+.hover-ani>span:first-child+.hover-en-1{
+   font-size:4rem;
+  font-weight:bold;
+  
+}
+.hover-ani:hover>span:first-child+.hover-en-1 {
+  --color-10:red;
+  --color-20:blue;
+  --color-30:green;
+  font-size:4rem;
+  font-weight:bold;
+  animation-name:ani-40;
+  animation-duration:4s;
+  animation-timing-function:linear;
+  animation-iteration-count:infinite;
+  animation-play-state:running;
+}
+.g9{
+  margin-top:200px;
+  margin-bottom:100px;
+}
+.hover-ani{
+  color:white;
+  font-size:60px;
+  margin-left:435px;
+  cursor: url(https://cdn.jsdelivr.net/gh/rmsgkr5623/project-gh/docs/portpolio_ch/img/cursor_1.png) 14 0,pointer;
+}
+
+.hover-en-1 > span:nth-child(1) {
+  color:var(--color-10);
+  text-shadow:var(--color-40);
+}
+.hover-en-1 > span:nth-child(2) {
+  color:var(--color-20);
+  text-shadow:var(--color-50);
+}
+.hover-en-1 > span:nth-child(3) {
+  color:var(--color-30);
+  text-shadow:var(--color-60);
+}
+
+.hover-en-1>span{
+  margin-right:-6.5rem;
+}
+
+.hover-en-1>span{
+  transition:color .5s,text-shadow .5s;
+}
+
+@keyframes ani-40 {
+   0% { 
+    --color-10:white;
+    --color-40:0 0 30px #FFFFFF,0 0 10px #FFFFFF;
+    --color-20:white;
+    --color-50:0 0 30px #FFFFFF,0 0 10px #FFFFFF;
+    --color-30:white;
+    --color-60:0 0 30px #FFFFFF,0 0 10px #FFFFFF;
+  }
+   10% { 
+    --color-10:red;
+    --color-40:0 0 30px #FF0000,0 0 10px #FF0000;
+    --color-20:white;
+    --color-50:0 0 30px #FFFFFF,0 0 10px #FFFFFF;
+    --color-30:white;
+    --color-60:0 0 30px #FFFFFF,0 0 10px #FFFFFF;
+  }
+    20% { 
+    --color-10:red;
+    --color-40:0 0 30px #FF0000,0 0 10px #FF0000;
+    --color-20:yellow;
+    --color-50:0 0 30px #FFF500,0 0 10px #FFF500;
+    --color-30:white;
+    --color-60:0 0 30px #FFFFFF,0 0 10px #FFFFFF;
+  }
+   30% { 
+    --color-10:red;
+    --color-40:0 0 30px #FF0000,0 0 10px #FF0000;
+    --color-20:yellow;
+    --color-50:0 0 30px #FFF500,0 0 10px #FFF500;
+    --color-30:blue;
+    --color-60:0 0 30px #0E28C8,0 0 10px #0E28C8;
+  }
+   40% { 
+    --color-10:white;
+    --color-40:0 0 30px #FFFFFF,0 0 10px #FFFFFF;
+    --color-20:white;
+    --color-50:0 0 30px #FFFFFF,0 0 10px #FFFFFF;
+    --color-30:white;
+    --color-60:0 0 30px #FFFFFF,0 0 10px #FFFFFF;
+  }
+  50% { 
+    --color-10:#16F05E;
+    --color-40:0 0 30px #16F05E,0 0 10px #16F05E;
+    --color-20:#16F05E;
+    --color-50:0 0 30px #16F05E,0 0 10px #16F05E;
+    --color-30:#16F05E;
+    --color-60:0 0 30px #16F05E,0 0 10px #16F05E;
+  }
+  60% { 
+    --color-10:white;
+    --color-40:0 0 30px #FFFFFF,0 0 10px #FFFFFF;
+    --color-20:white;
+    --color-50:0 0 30px #FFFFFF,0 0 10px #FFFFFF;
+    --color-30:white;
+    --color-60:0 0 30px #FFFFFF,0 0 10px #FFFFFF;
+  }
+  80% { 
+    --color-10:#16F05E;
+    --color-40:0 0 30px #16F05E,0 0 10px #16F05E;
+    --color-20:#16F05E;
+    --color-50:0 0 30px #16F05E,0 0 10px #16F05E;
+    --color-30:#16F05E;
+    --color-60:0 0 30px #16F05E,0 0 10px #16F05E;
+  }
+  90% { 
+     --color-10:white;
+    --color-40:0 0 30px #FFFFFF,0 0 10px #FFFFFF;
+    --color-20:white;
+    --color-50:0 0 30px #FFFFFF,0 0 10px #FFFFFF;
+    --color-30:white;
+    --color-60:0 0 30px #FFFFFF,0 0 10px #FFFFFF;
+  }
+  100% { 
+     --color-10:#16F05E;
+    --color-40:0 0 30px #16F05E,0 0 10px #16F05E;
+    --color-20:#16F05E;
+    --color-50:0 0 30px #16F05E,0 0 10px #16F05E;
+    --color-30:#16F05E;
+    --color-60:0 0 30px #16F05E,0 0 10px #16F05E;
+  }
+}
+

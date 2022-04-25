@@ -1,0 +1,693 @@
+/*폰트*/
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@font-face {
+     font-family: 'DungGeunMo';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+html{
+  cursor:url(https://ifh.cc/g/nOsMnd.png),auto;
+}
+
+html>body{
+  font-family: 'Press Start 2P', cursive;
+  height:14000px;
+   
+ 
+}
+body{
+  background-color:black;
+}
+@media (min-width: 1800px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #16F05E;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #16F05E;
+  
+}
+
+::-webkit-scrollbar-thumb {
+  background-color:white;
+  border-radius:60px;
+  
+}
+.con{
+  width:1920px;
+  padding:0 170px;
+}
+/*메뉴바*/
+.strongglow {
+  text-shadow:
+  0 0 30px #ffffff,0 0 10px #ffffff;
+}
+.menu-box-16{
+  margin-top:50px;
+  z-index:999;
+  margin-bottom:150px;
+ 
+}
+.text-menu-20{
+  color:white;
+  font-size:35px;
+}
+.fa-solid{
+  color:white;
+  font-size:28px;
+}
+.top-menu-box {
+  position:fixed;
+  top:20px;
+  right:160px;
+  width:40px;
+  height:40px;
+  border-radius:50%;
+  transition:all .5s;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.top-menu-box__btn-toggle {
+  position:relative;
+  top:-15px;
+  left:1550px;
+  width:40px;
+  height:40px;
+  border-radius:50%;
+   cursor: url(https://cdn.jsdelivr.net/gh/rmsgkr5623/project-gh/docs/portpolio_ch/img/cursor_1.png) 14 0,pointer;
+}
+
+html.top-menu-box-actived .top-menu-box {
+  top:-50%;
+  right:-50%;
+  width:200%;
+  height:200%;
+  background-color:#16F05E;
+}
+
+html.top-menu-box-actived .top-menu-box__btn-toggle {
+ background-image:url(https://ifh.cc/g/c9sXpW.png);
+  background-position:top center;
+  background-repeat:no-repeat;
+  width:90px;
+  height:90px;
+}
+
+.top-menu-box__box {
+  width:100vh;
+  height:100vh;
+  visibility:hidden;
+  opacity:0;
+  transition: all .499s 0.001s;
+}
+
+html.top-menu-box-actived .top-menu-box__box {
+  visibility:visible;
+  opacity:1;
+}
+
+html.top-menu-box-actived,
+html.top-menu-box-actived > body {
+  overflow:hidden;
+}
+.ge-10{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  min-height:100vh;
+ 
+}
+.ge-10 ul{
+  position:relative;
+  display:flex;
+  flex-direction:column;
+  gap:30px;
+}
+.ge-10 ul>li{
+  position:relative;
+}
+.ge-10 ul>li{
+  position:relative;
+  font-size:3em;
+  line-height:1em;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color:transparent;
+  -webkit-text-stroke:1px #24FF00;
+}
+.ge-10 ul>li>a::before{
+  content:attr(data-text);
+  position:absolute;
+  color:var(--clr);
+  width:0;
+  overflow:hidden;
+  transition:1s;
+  border-right: 8px solid var(--clr);
+  -webkit-text-stroke:1px var(--clr);
+}
+.ge-10 ul>li>a:hover::before{
+  width:100%;
+  filter:drop-shadow(0 0 25px var(--clr));
+}
+.ge-10 ul>li>a{
+  position:relative;
+  
+}
+/*첫번째*/
+
+.process-video>video {
+  width:1920px;
+  height:500px;
+  object-fit:cover;
+}
+.process-text{
+  color:white;
+  top:px;
+  font-size:110px;
+  font-family: 'DungGeunMo';
+  line-height:110%;
+  
+}
+.ab-1{
+  margin-bottom:100px;
+}
+.pr-ab{
+  top:385px;
+  left:170px;
+}
+.pp{
+   font-family: 'DungGeunMo';
+}
+.pr-text-1{
+  transition-delay:.3s;
+}
+.pr-text-2{
+  transition-delay:.6s;
+}.pr-text-3{
+  transition-delay:.9s;
+}
+.pr-vi-1{
+  margin-bottom:500px;
+}
+/*두번째*/
+.strongglow {
+  text-shadow:
+  0 0 30px #ffffff,0 0 10px #ffffff;
+}
+.Process-text-11-1{
+  color:white;
+  font-size:70px;
+  line-height:108%;
+  word-spacing:-25px;
+}
+.Process-text-11-1>span{
+  color:#16F05E;
+}
+.Process-text-12{
+  color:#16F05E;
+  font-family: 'DungGeunMo';
+  margin-top:20px;
+  line-height:120%;
+  font-size:35px;
+  word-spacing:-5px;
+}
+.Process-text-13{
+  color:white;
+  font-family: 'DungGeunMo';
+  line-height:120%;
+  margin-top:100px;
+  font-size:19px;
+}
+.Process-text-14{
+  color:white;
+  font-size:20px;
+  margin-top:100px;
+  padding-left:1410px;
+  margin-bottom:150px;
+}
+.pr-img{
+  position:absolute;
+  top:-59px;
+  right:-215px;
+}
+.pr-vi-1{
+  margin-bottom:650px;
+}
+
+/*3번째*/
+.chart-text{
+  color:white;
+  font-size:20px;
+  margin-top:150px;
+  margin-bottom:150px;
+}
+/**/
+.process-text-40{
+  font-size:70px;
+  color:white;
+}
+.process-text-40-1{
+  font-size:70px;
+  line-height:80px;
+  color:white;
+  word-spacing:-10px;
+}
+.process-text-40-1>span{
+  color:#16F05E;
+}
+.bg-san-1{
+  position:absolute;
+}
+.process-text-2{
+   color:#16F05E;
+  font-size:35px;
+  font-family: 'DungGeunMo';
+  line-height:35px;
+  margin-top:20px;
+}
+.process-text-3{
+  font-size:20px;
+  font-family: 'DungGeunMo';
+  line-height:115%;
+  margin-top:100px;
+}
+.game-boy{
+  left:-22px;
+  top:-5px;
+}
+.process-text-4{
+  font-size:20px;
+  margin-top:90px;
+}
+.typ{
+  margin-top:200px;
+  margin-bottom:400px;
+}
+.typ-1{
+  font-size:30px;
+  color:white;
+  font-family: 'DungGeunMo';
+}
+.typ-1-1{
+  font-size:80px;
+  color:white;
+  font-family: 'DungGeunMo';
+}
+.typ-1-2{
+  font-size:20px;
+  color:#999999;
+  font-family: 'DungGeunMo';
+  margin-top:120px;
+  line-height:20px;
+}
+.typ-2{
+  font-size:60px;
+  color:white;
+  font-family: 'DungGeunMo';
+  position:absolute;
+  left:660px;
+  top:75px;
+  
+}
+.typ-2-3{
+  font-size:60px;
+  color:white;
+  word-spacing:-7px;
+  font-family: 'DungGeunMo';
+  line-height:115%;
+}
+.typ-2-1{
+  font-size:20px;
+  color:#999999;
+  font-family: 'DungGeunMo';
+  line-height:19px;
+  margin-top:72px;
+}
+.typ-3{
+  font-size:13px;
+  color:white;
+}
+.typ-3-1{
+  font-size:28px;
+  color:white;
+  margin-top:25px;
+}
+.typ-3-2{
+  font-size:20px;
+  color:#999999;
+  font-family: 'DungGeunMo';
+  margin-top:25px;
+  line-height:19px;
+  margin-top:200px;
+}
+.typ-4{
+  font-size:40px;
+  color:white;
+  line-height:117%;
+  position:absolute;
+  left:660px;
+  top:39px;
+}
+.typ-4-4{
+  font-size:40px;
+  color:white;
+  line-height:117%;
+  word-spacing:-10px;
+  
+}
+.typ-4-1{
+  word-spacing:-4px;
+  font-size:18px;
+  color:#999999;
+  line-height:138%;
+  margin-top:56px;
+}
+.typ-4-2{
+  font-size:20px;
+  color:white;
+  margin-top:150px;
+}
+.main-text{
+  font-size:60px;
+  color:white;
+}
+.main-text-1{
+  font-size:20px;
+  color:white;
+  font-family: 'DungGeunMo';
+  line-height:20px;
+  margin-top:50px;
+}
+.main-img>img{
+  position:absolute;
+  top:250px;
+}
+.main-img-2>img{
+  position:absolute;
+  top:225px;
+  left:975px;
+}
+.main-img-3>img{
+  position:absolute;
+  top:825px;
+  left:575px;
+}
+.main-img-text{
+  font-size:15px;
+  color:white;
+  width:600px;
+  margin-left:500px;
+  margin-top:190px;
+}
+.do-text{
+  font-size:19px;
+  font-family: 'DungGeunMo';
+  position:absolute;
+  left:240px;
+  top:-4px;
+}
+.main-img-text-1{
+  font-size:24px;
+  color:white;
+  font-family: 'DungGeunMo';
+  position:absolute;
+  top:950px;
+  left:1100px;
+  width:500px;
+}
+.main-img-text-2{
+  font-size:18px;
+  color:white;
+  font-family: 'DungGeunMo';
+  position:absolute;
+  width:500px;
+  top:50px;
+  line-height:18px;
+}
+.main-box{
+  height:1000px;
+  margin-bottom:300px;
+}
+/*브랜딩 페이지*/
+.brand-box{
+  margin-bottom:200px;
+}
+.brand-box-1{
+  height:2900px;
+}
+.brand-text{
+  color:white;
+  font-size:60px;
+}
+.brand-text-1{
+  color:white;
+  font-size:20px;
+   font-family: 'DungGeunMo';
+  line-height:19px;
+  margin-top:50px;
+}
+.brand-img>img{
+  position:absolute;
+  left:430px;
+  top:280px;
+}
+.about-box{
+  height:2500px;
+  margin-bottom:100px;
+}
+.about-img-box>img{
+  position:absolute;
+  left:-30px;
+}
+.about-img-box-1{
+  position:absolute;
+  top:1135px;
+  left:900px;
+}
+.about-text-box{
+  font-size:60px;
+  color:white;
+  margin-left:1282px;
+  position:absolute;
+  top:-350px;
+}
+.about-text-box-1{
+  font-size:20px;
+  line-height:19px;
+  font-family: 'DungGeunMo';
+  width:600px;
+  text-align:right;
+  position:absolute;
+  right:5px;
+  margin-top:50px;
+}
+.about-text-box-3{
+  position:absolute;
+  font-size:17px;
+  top:1555px;
+  right:220px;
+}
+.about-text-box-4{
+  font-size:20px;
+  font-family: 'DungGeunMo';
+  width:500px;
+  position:absolute;
+  line-height:19px;
+  margin-top:15px;
+}
+.protfolio-text{
+  font-size:60px;
+  color:white;
+}
+.protfolio-text-1{
+  text-align:right;
+  font-size:20px;
+  line-height:19px;
+  font-family: 'DungGeunMo';
+  position:absolute;
+  right:0px;
+  margin-top:50px;
+}
+.protfolio-box{
+  height:1000px;
+}
+.protfolio-img>img{
+  position:absolute;
+  left:-30px;
+  top:220px;
+}
+.contact-box{
+  margin-top:100px;
+  margin-bottom:400px;
+  height:500px;
+}
+.contact-text{
+  color:white;
+  font-size:60px;
+}
+.contact-text-1{
+  font-size:20px;
+  font-family: 'DungGeunMo';
+  line-height:19px;
+  margin-top:50px;
+}
+.contact-img>img{
+  position:absolute;
+  top:250px;
+  right:-25px;
+}
+/*다음단계 버튼*/
+.hover-ani:hover>span:first-child{
+  font-size:4.2rem;
+  margin-top:-10px;
+  transition:font-size .8s,margin-top .7s;
+}
+.g9{
+  margin-top:400px;
+  height:200px;
+ 
+}
+.hover-ani{
+  cursor:pointer;
+  
+}
+.hover-ani>span:first-child+.hover-en{
+   font-size:4rem;
+  font-weight:bold;
+  
+}
+.hover-ani:hover>span:first-child+.hover-en-1 {
+  --color-10:red;
+  --color-20:blue;
+  --color-30:green;
+  font-size:4rem;
+  font-weight:bold;
+  animation-name:ani-40;
+  animation-duration:4s;
+  animation-timing-function:linear;
+  animation-iteration-count:infinite;
+  animation-play-state:running;
+}
+
+.hover-ani{
+  color:white;
+  cursor: url(https://cdn.jsdelivr.net/gh/rmsgkr5623/project-gh/docs/portpolio_ch/img/cursor_1.png) 14 0,pointer;
+  font-size:60px;
+  
+  margin-left:470px;
+
+}
+
+.hover-en-1 > span:nth-child(1) {
+  color:var(--color-10);
+  text-shadow:var(--color-40);
+}
+.hover-en-1 > span:nth-child(2) {
+  color:var(--color-20);
+  text-shadow:var(--color-50);
+}
+.hover-en-1 > span:nth-child(3) {
+  color:var(--color-30);
+  text-shadow:var(--color-60);
+}
+
+.hover-en-1>span{
+  margin-right:-6.5rem;
+}
+
+.hover-en-1>span{
+  transition:color .5s,text-shadow .5s;
+}
+
+@keyframes ani-40 {
+   0% { 
+    --color-10:white;
+    --color-40:0 0 30px #FFFFFF,0 0 10px #FFFFFF;
+    --color-20:white;
+    --color-50:0 0 30px #FFFFFF,0 0 10px #FFFFFF;
+    --color-30:white;
+    --color-60:0 0 30px #FFFFFF,0 0 10px #FFFFFF;
+  }
+   10% { 
+    --color-10:red;
+    --color-40:0 0 30px #FF0000,0 0 10px #FF0000;
+    --color-20:white;
+    --color-50:0 0 30px #FFFFFF,0 0 10px #FFFFFF;
+    --color-30:white;
+    --color-60:0 0 30px #FFFFFF,0 0 10px #FFFFFF;
+  }
+    20% { 
+    --color-10:red;
+    --color-40:0 0 30px #FF0000,0 0 10px #FF0000;
+    --color-20:yellow;
+    --color-50:0 0 30px #FFF500,0 0 10px #FFF500;
+    --color-30:white;
+    --color-60:0 0 30px #FFFFFF,0 0 10px #FFFFFF;
+  }
+   30% { 
+    --color-10:red;
+    --color-40:0 0 30px #FF0000,0 0 10px #FF0000;
+    --color-20:yellow;
+    --color-50:0 0 30px #FFF500,0 0 10px #FFF500;
+    --color-30:blue;
+    --color-60:0 0 30px #0E28C8,0 0 10px #0E28C8;
+  }
+   40% { 
+    --color-10:white;
+    --color-40:0 0 30px #FFFFFF,0 0 10px #FFFFFF;
+    --color-20:white;
+    --color-50:0 0 30px #FFFFFF,0 0 10px #FFFFFF;
+    --color-30:white;
+    --color-60:0 0 30px #FFFFFF,0 0 10px #FFFFFF;
+  }
+  50% { 
+    --color-10:#24FF00;
+    --color-40:0 0 30px #24FF00,0 0 10px #24FF00;
+    --color-20:#24FF00;
+    --color-50:0 0 30px #24FF00,0 0 10px #24FF00;
+    --color-30:#24FF00;
+    --color-60:0 0 30px #24FF00,0 0 10px #24FF00;
+  }
+  60% { 
+    --color-10:white;
+    --color-40:0 0 30px #FFFFFF,0 0 10px #FFFFFF;
+    --color-20:white;
+    --color-50:0 0 30px #FFFFFF,0 0 10px #FFFFFF;
+    --color-30:white;
+    --color-60:0 0 30px #FFFFFF,0 0 10px #FFFFFF;
+  }
+  80% { 
+    --color-10:#24FF00;
+    --color-40:0 0 30px #24FF00,0 0 10px #24FF00;
+    --color-20:#24FF00;
+    --color-50:0 0 30px #24FF00,0 0 10px #24FF00;
+    --color-30:#24FF00;
+    --color-60:0 0 30px #24FF00,0 0 10px #24FF00;
+  }
+  90% { 
+     --color-10:white;
+    --color-40:0 0 30px #FFFFFF,0 0 10px #FFFFFF;
+    --color-20:white;
+    --color-50:0 0 30px #FFFFFF,0 0 10px #FFFFFF;
+    --color-30:white;
+    --color-60:0 0 30px #FFFFFF,0 0 10px #FFFFFF;
+  }
+  100% { 
+     --color-10:#24FF00;
+    --color-40:0 0 30px #24FF00,0 0 10px #24FF00;
+    --color-20:#24FF00;
+    --color-50:0 0 30px #24FF00,0 0 10px #24FF00;
+    --color-30:#24FF00;
+    --color-60:0 0 30px #24FF00,0 0 10px #24FF00;
+  }
+}

@@ -1,0 +1,606 @@
+/*폰트*/
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+@font-face {
+     font-family: 'DungGeunMo';
+     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+     font-weight: normal;
+     font-style: normal;
+}
+html{ 
+  cursor:url(https://cdn.jsdelivr.net/gh/rmsgkr5623/project-gh/docs/portpolio_ch/img/cursor_2.png),auto;
+}
+html>body{
+  font-family: 'Press Start 2P', cursive;
+ 
+  
+ 
+}
+body{
+  background-color:black;
+  height:4100px;
+}
+@media (min-width: 1800px) {
+  body {
+    overflow-x: hidden;
+  }
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #16F05E;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #16F05E;
+  
+}
+
+::-webkit-scrollbar-thumb {
+  background-color:white;
+  border-radius:60px;
+  
+}
+.re{
+  height:1000px;
+}
+.con{
+  width:100%;
+  padding:0 170px;
+}
+
+.menu-bar{
+  width:1850px;
+  height:100px;
+  background-color:red;
+}
+.ul-br{
+  color:white;
+}
+.brand-p{
+  padding-top:20px;
+}
+.ul-br>li>a{
+  font-size:17px;
+  padding:30px;
+}
+.strongglow {
+  text-shadow:
+  0 0 30px #ffffff,0 0 10px #ffffff;
+}
+.ul-br>li>a{
+      cursor: url(https://cdn.jsdelivr.net/gh/rmsgkr5623/project-gh/docs/portpolio_ch/img/cursor_1.png) 14 0,pointer;
+
+}
+/*글자 애니메이션*/
+.main-text {
+  animation-name:ani-1;
+  position:absolute;
+  color:white;
+  left:-70px;
+  top:170px;
+  z-index:2;
+  animation-delay:0;
+  animation-duration:2s;
+  animation-fill-mode:both;
+  
+}
+.main-text-1 {
+  animation-name:ani-1;
+  position:absolute;
+  text-shadow: 0 0 3px white,0 0 3px white,0 0 3px white;
+  z-index:1;
+  left:-55px;
+  top:135px;
+  animation-delay:0;
+  animation-duration:2s;
+  animation-fill-mode:both;
+}
+
+@keyframes ani-1 {
+  0% {
+    font-size:0px;
+  }  
+  100% {
+    font-size:120px;
+  }
+}
+/*글자 2 애니메이션*/
+.main-text-2 {
+  animation-name:ani-2;
+  position:absolute;
+  color:white;
+  right:-1300px;
+  top:205px;
+  animation-delay:0;
+  z-index:2;
+  animation-duration:3s;
+  animation-fill-mode:both;
+}
+.main-text-2-1 {
+  animation-name:ani-2;
+  position:absolute;
+  text-shadow: 0 0 3px white,0 0 3px white,0 0 3px white;
+  right:-1310px;
+  top:180px;
+  z-index:1;
+  animation-delay:0;
+  animation-duration:3s;
+  animation-fill-mode:both;
+}
+@keyframes ani-2 {
+  0% {
+    font-size:310px;
+   
+  }
+ 
+  100% {
+    font-size:90px;
+    
+  }
+}
+/*글자 3 애니메이션*/
+.main-text-3 {
+  animation-name:ani-3;
+  position:absolute;
+  color:white;
+  left:-1050px;
+  top:350px;
+  animation-delay:0;
+  z-index:2;
+  animation-duration:3s;
+  animation-fill-mode:both;
+}
+.main-text-3-1 {
+  animation-name:ani-3;
+  position:absolute;
+  text-shadow: 0 0 3px white,0 0 3px white,0 0 3px white;
+  left:-1035px;
+  top:340px;
+  z-index:1;
+  animation-delay:0;
+  animation-duration:3s;
+  animation-fill-mode:both;
+}
+@keyframes ani-3 {
+  0% {
+    font-size:100px;
+   opacity:0;
+  }
+ 
+  100% {
+    font-size:50px;
+    opacity:1;
+  }
+}
+/*글자 4 애니메이션*/
+.main-text-4 {
+  animation-name:ani-4;
+  position:absolute;
+  color:white;
+  right:100px;
+  top:350px;
+  animation-delay:0;
+  z-index:2;
+  animation-duration:3s;
+  animation-fill-mode:both;
+}
+.main-text-4-1 {
+  animation-name:ani-4;
+  position:absolute;
+  text-shadow: 0 0 3px white,0 0 3px white,0 0 3px white;
+  right:90px;
+  top:340px;
+  z-index:1;
+  animation-delay:0;
+  animation-duration:3s;
+  animation-fill-mode:both;
+}
+@keyframes ani-4 {
+  0% {
+    font-size:0px;
+  }
+ 
+  100% {
+    font-size:50px;
+  }
+}
+/*글자 5 애니메이션*/
+.main-text-5 {
+  animation-name:ani-5;
+  position:absolute;
+  color:white;
+  right:-110px;
+  top:280px;
+  animation-delay:0;
+  z-index:2;
+  animation-duration:3s;
+  animation-fill-mode:both;
+}
+.main-text-5-1 {
+  animation-name:ani-5;
+  position:absolute;
+  text-shadow: 0 0 3px white,0 0 3px white,0 0 3px white;
+  right:-130px;
+  top:260px;
+  z-index:1;
+  animation-delay:0;
+  animation-duration:3s;
+  animation-fill-mode:both;
+}
+@keyframes ani-5 {
+  0% {
+    font-size:0px;
+  }
+ 
+  100% {
+    font-size:250px;
+  }
+}
+/*글자 6 애니메이션*/
+.main-text-6 {
+  animation-name:ani-6;
+  position:absolute;
+  color:white;
+  left:0px;
+  top:420px;
+  animation-delay:0;
+  z-index:2;
+  animation-duration:3s;
+  animation-fill-mode:both;
+}
+.main-text-6-1 {
+  animation-name:ani-6;
+  position:absolute;
+  text-shadow: 0 0 3px white,0 0 3px white,0 0 3px white;
+  left:20px;
+  top:400px;
+  z-index:1;
+  animation-delay:0;
+  animation-duration:3s;
+  animation-fill-mode:both;
+}
+@keyframes ani-6 {
+  0% {
+    font-size:0px;
+  }
+ 
+  100% {
+    font-size:100px;
+  }
+}
+/*글자 6 애니메이션*/
+.main-text-7 {
+  animation-name:ani-7;
+  position:absolute;
+  color:white;
+  right:170px;
+  top:515px;
+  animation-delay:0;
+  z-index:2;
+  animation-duration:2s;
+  animation-fill-mode:both;
+}
+.main-text-7-1 {
+  animation-name:ani-7;
+  position:absolute;
+  text-shadow: 0 0 3px white,0 0 3px white,0 0 3px white;
+  right:165px;
+  top:508px;
+  z-index:1;
+  animation-delay:0;
+  animation-duration:3s;
+  animation-fill-mode:both;
+}
+@keyframes ani-7 {
+  0% {
+    font-size:100px;
+  }
+ 
+  100% {
+    font-size:18px;
+  }
+}
+/*트렌드 애니*/
+.box-1 {
+  font-size:110px;
+  position:absolute;
+  color:#16F05E;
+  font-family: 'DungGeunMo';
+  top:580px;
+  left:750px;
+}
+
+.typing-effect-1 {
+  display:flex;
+}
+
+.typing-effect-1 > div {
+  position:relative;
+}
+
+.typing-effect-1 > div::before {
+  content:"";
+  position:absolute;
+  top:100%;
+  left:0;
+  
+ 
+}
+
+.typing-effect-1 > div::after {
+  content:"|";
+  animation-name:ani-20;
+  animation-iteration-count:infinite;
+  animation-duration: .5s;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes ani-20 {
+  0% {
+    opacity:0;
+  }
+  
+  100% {
+    opacity:1;
+  }
+}
+.strongglow-1 {
+  text-shadow:
+  0 0 20px #16F05E, 0 0 10px #16F05E;
+  
+}
+/*두번째*/
+
+.video-1 {
+  position:absolute;
+  top:-25px;
+}
+.video-1>video {
+  width:665px;
+  height:655px;
+  object-fit:cover;
+}
+
+.br-co-1{
+  color:white;
+  font-size:70px;
+  text-align:end;
+  z-index:3;
+  position:relative;
+  line-height:135%;
+  word-spacing:-50px;
+}
+.br-co-1>span{
+  color:#16F05E;
+}
+.br-co-2{
+  color:#16F05E;
+  font-size:35px;
+  text-align:end;
+  z-index:3;
+  position:relative;
+  line-height:123%;
+  font-family: 'DungGeunMo';
+  margin-top:20px;
+  word-spacing:-5px;
+  
+}
+.br-co-3{
+  color:white;
+  font-size:20px;
+  text-align:end;
+  z-index:3;
+  position:relative;
+  line-height:115%;
+  font-family: 'DungGeunMo';
+  margin-top:150px;
+}
+.br-co-4{
+  color:white;
+  font-size:20px;
+  text-align:end;
+  z-index:3;
+  position:relative;
+  margin-top:100px;
+}
+.br-co-5{
+  color:white;
+  font-size:25px;
+  left:220px;
+  top:580px;
+  word-spacing:-10px;
+}
+/*3번째 문단*/
+.logo-text{
+  color:white;
+  font-size:70px;
+  margin-top:150px;
+}
+.logo-text-1{
+  margin-top:150px;
+  word-spacing:-25px;
+  line-height:79px;
+}
+.logo-text-1>span{
+  color:#16F05E;
+}
+.logo-text-10{
+  font-size:35px;
+  font-family: 'DungGeunMo';
+  margin-top:20px;
+  color:#16F05E;
+  word-spacing:-5px;
+  
+}
+.logo-text-11{
+  font-size:20px;
+  font-family: 'DungGeunMo';
+  margin-top:100px;
+  word-spacing:-1px;
+  line-height:23px;
+}
+
+.logo-img{
+  left:850px;
+  top:430px;
+}
+.color-img{
+  width:2047px;
+  left:-100px;
+  margin-top:70px;
+}
+.logo-de{
+  margin-top:1250px;
+  color:white;
+  
+}
+.back-gradient{
+  background: rgb(0,0,0);
+background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+  width:100%;
+  height:500px;
+  position:absolute;
+  left:0;
+  top:1350px;
+}
+/*다음단계 버튼*/
+.hover-ani:hover>span:first-child{
+  font-size:4.5rem;
+  margin-top:-10px;
+  transition:font-size .8s,margin-top .7s;
+}
+
+.hover-ani{
+   cursor: url(https://cdn.jsdelivr.net/gh/rmsgkr5623/project-gh/docs/portpolio_ch/img/cursor_1.png) 14 0,pointer;
+  
+}
+.hover-ani>span:first-child+.hover-en{
+   font-size:4rem;
+  font-weight:bold;
+  
+}
+.hover-ani:hover>span:first-child+.hover-en {
+  --color-1:red;
+  --color-2:blue;
+  --color-3:green;
+  font-size:4rem;
+  font-weight:bold;
+  animation-name:ani-40;
+  animation-duration:4s;
+  animation-timing-function:linear;
+  animation-iteration-count:infinite;
+  animation-play-state:running;
+}
+.g9{
+  margin-top:200px;
+}
+.hover-ani{
+  color:white;
+  font-size:60px;
+  margin-left:535px;
+}
+
+.hover-en > span:nth-child(1) {
+  color:var(--color-1);
+  text-shadow:var(--color-4);
+}
+.hover-en > span:nth-child(2) {
+  color:var(--color-2);
+  text-shadow:var(--color-5);
+}
+.hover-en > span:nth-child(3) {
+  color:var(--color-3);
+  text-shadow:var(--color-6);
+}
+
+.hover-en>span{
+  margin-right:-6.5rem;
+}
+
+.hover-en>span{
+  transition:color .5s,text-shadow .5s;
+}
+
+@keyframes ani-40 {
+   0% { 
+    --color-1:white;
+    --color-4:0 0 30px #FFFFFF,0 0 10px #FFFFFF;
+    --color-2:white;
+    --color-5:0 0 30px #FFFFFF,0 0 10px #FFFFFF;
+    --color-3:white;
+    --color-6:0 0 30px #FFFFFF,0 0 10px #FFFFFF;
+  }
+   10% { 
+    --color-1:red;
+    --color-4:0 0 30px #FF0000,0 0 10px #FF0000;
+    --color-2:white;
+    --color-5:0 0 30px #FFFFFF,0 0 10px #FFFFFF;
+    --color-3:white;
+    --color-6:0 0 30px #FFFFFF,0 0 10px #FFFFFF;
+  }
+    20% { 
+    --color-1:red;
+    --color-4:0 0 30px #FF0000,0 0 10px #FF0000;
+    --color-2:yellow;
+    --color-5:0 0 30px #FFF500,0 0 10px #FFF500;
+    --color-3:white;
+    --color-6:0 0 30px #FFFFFF,0 0 10px #FFFFFF;
+  }
+   30% { 
+    --color-1:red;
+    --color-4:0 0 30px #FF0000,0 0 10px #FF0000;
+    --color-2:yellow;
+    --color-5:0 0 30px #FFF500,0 0 10px #FFF500;
+    --color-3:blue;
+    --color-6:0 0 30px #0E28C8,0 0 10px #0E28C8;
+  }
+   40% { 
+    --color-1:white;
+    --color-4:0 0 30px #FFFFFF,0 0 10px #FFFFFF;
+    --color-2:white;
+    --color-5:0 0 30px #FFFFFF,0 0 10px #FFFFFF;
+    --color-3:white;
+    --color-6:0 0 30px #FFFFFF,0 0 10px #FFFFFF;
+  }
+  50% { 
+    --color-1:#16F05E;
+    --color-4:0 0 30px #16F05E,0 0 10px #16F05E;
+    --color-2:#16F05E;
+    --color-5:0 0 30px #16F05E,0 0 10px #16F05E;
+    --color-3:#16F05E;
+    --color-6:0 0 30px #16F05E,0 0 10px #16F05E;
+  }
+  60% { 
+    --color-1:white;
+    --color-4:0 0 30px #FFFFFF,0 0 10px #FFFFFF;
+    --color-2:white;
+    --color-5:0 0 30px #FFFFFF,0 0 10px #FFFFFF;
+    --color-3:white;
+    --color-6:0 0 30px #FFFFFF,0 0 10px #FFFFFF;
+  }
+  80% { 
+   --color-1:#16F05E;
+    --color-4:0 0 30px #16F05E,0 0 10px #16F05E;
+    --color-2:#16F05E;
+    --color-5:0 0 30px #16F05E,0 0 10px #16F05E;
+    --color-3:#16F05E;
+    --color-6:0 0 30px #16F05E,0 0 10px #16F05E;
+  }
+  90% { 
+     --color-1:white;
+    --color-4:0 0 30px #FFFFFF,0 0 10px #FFFFFF;
+    --color-2:white;
+    --color-5:0 0 30px #FFFFFF,0 0 10px #FFFFFF;
+    --color-3:white;
+    --color-6:0 0 30px #FFFFFF,0 0 10px #FFFFFF;
+  }
+  100% { 
+     --color-1:#16F05E;
+    --color-4:0 0 30px #16F05E,0 0 10px #16F05E;
+    --color-2:#16F05E;
+    --color-5:0 0 30px #16F05E,0 0 10px #16F05E;
+    --color-3:#16F05E;
+    --color-6:0 0 30px #16F05E,0 0 10px #16F05E;
+  }
+}
