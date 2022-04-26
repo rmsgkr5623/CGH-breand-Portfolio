@@ -251,6 +251,31 @@ html.top-menu-box-actived > body {
   margin-top:150px;
   margin-bottom:150px;
 }
+.chart-img>img{
+  z-index:99;
+}
+.chart-box{
+  margin-top:100px;
+  margin-bottom:150px;
+}
+.cu_img{
+  top:500px;
+  width:400px;
+  left:-50px;
+  z-index:991;
+  transition-delay:.4s;
+}
+.pk_img{
+  top:380px;
+  right:-130px;
+  z-index:998;
+  transition-delay:.9s;
+}
+.pk2_img{
+  top:-180px;
+  right:10px;
+  z-index:1;
+}
 /**/
 .process-text-40{
   font-size:70px;
